@@ -8,8 +8,8 @@ ser = serial.Serial(
     timeout=1  # タイムアウトの設定
 )
 
-# データ送信  設定温度の送信の要求
-request_00S1 = b'\x04\x30\x30\x53\x31\x05'
+# データ送信  運転状態の送信の要求
+request_00S1 = b'\x04\x30\x30\x45\x52\x05'
 ser.write(request_00S1)
 
 # データ受信
